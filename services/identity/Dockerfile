@@ -24,7 +24,7 @@ RUN gradle build
 RUN gradle bootJar
 
 # Main Image
-FROM openjdk:17.0-jdk-slim
+FROM openjdk:24-jdk-slim
 # #Java
 RUN apt-get -y update && apt-get -y install curl && apt-get -y clean
 # RUN apt-get -y update && apt-get -y install wget curl unzip && apt-get -y clean
